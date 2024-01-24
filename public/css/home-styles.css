@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.h2-bienvenida {
+    color: #ffffff;
+    text-align: center;
+}
+p {
+    color: #ffffff;
+}
+
+/* INICIO DE NAV-BAR */
+
+#menu {
+    background-color: #333;
+    transition: background-color 0.3s ease;
+    float: right;
+}
+
+#menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/*ITEMS DE MENU*/
+#menu ul li {
+    background-color: #333;
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+/*ENLACES DEL MENU*/
+#menu ul a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+#menu ul a:hover {
+    color: #ffd700;
+}
+
+/*DESPLEGABLE*/
+#menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0;
+}
+/*ITEMS DESPLEGABLE*/
+#menu ul ul li {
+    float: none;
+    width: 150px;
+}
+
+
+/*ENLACES DE LOS ITEMS DESPEGABLES*/
+#menu ul ul a {
+    line-height: 120%;
+    padding: 10px 15px;
+
+}
+/*ITEMS DEL MENU DESPEGABLE AL PASAR EL RATON*/
+#menu ul li:hover > ul {
+    display: block;
+}
+
+
+/*FIN DE NAV-BAR*/
